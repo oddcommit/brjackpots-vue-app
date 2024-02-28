@@ -1325,7 +1325,7 @@ export default {
     border: 10px solid;
     border-image-slice: 1;
     border-width: 1px;
-    border-image-source: linear-gradient(to top, #0a1739, #00b7f8);
+    border-image: linear-gradient(to top, #0a1739, #00b7f8);
     height: 60px;
     
     .game-menu-item {
