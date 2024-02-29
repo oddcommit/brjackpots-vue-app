@@ -7,7 +7,7 @@
             </div>
             <div class="header-middle">
                 <div class="menu-item">
-                    <img class="menu-icon" @click="toRecharge()" :src="require('../../assets/index/refer.png')" />
+                    <img class="menu-icon" @click="toPage(10)" :src="require('../../assets/index/refer.png')" />
                 </div>
                 <div class="menu-item">
                     <img class="menu-icon" @click="toPage(11)" :src="require('../../assets/index/vip.png')" />

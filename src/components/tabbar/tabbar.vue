@@ -9,9 +9,9 @@
                 </div>
             </div>
             <div class="x-sub">
-                <div class="item" :class="tabIndex == 6 ? 'tab-selected' : ''" @click="toPage(6)">
+                <div class="item" :class="tabIndex == 10 ? 'tab-selected' : ''" @click="toPage(10)">
                     <div class="tab-info">
-                        <img class="sub-img" :class="tabIndex == 6 ? 'selected-sub-img' : ''" :src="require('../../assets/index/refer.png')" />
+                        <img class="sub-img" :class="tabIndex == 10 ? 'selected-sub-img' : ''" :src="require('../../assets/index/refer.png')" />
                     </div>
                 </div>
             </div>

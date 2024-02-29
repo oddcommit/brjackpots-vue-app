@@ -1113,13 +1113,14 @@ export default {
 }
 
 .reward-info {
-    background-color: #641BE9;
+    background-color: #0f111d;
     margin-top: 10px;
     width: 100%;
     height: auto;
     border-radius: 6px;
     overflow: hidden;
     position: relative;
+    border: 1px solid white;
 
     >img {
         width: 100%;
@@ -1238,7 +1239,7 @@ export default {
                     padding: 3px 10px;
                     font-size: 12px;
                     color: white;
-                    background-image: linear-gradient(180deg,#A400DE 0%,#3E007C 100%),linear-gradient(180deg,rgb(200,169,217),rgb(114,68,190));
+                    background: #00bafe;
                     box-shadow: 0 0 22px rgba(15,76,212,.57), 0 1px 4px rgba(24,0,73,.7), inset 0 0 9px rgba(233,58,255,.6);
                     border-radius: 6px;
                     border: 1px solid white;
@@ -1470,7 +1471,7 @@ export default {
 
 .share-info {
     margin-top: 10px;
-    background-color: #641BE9;
+    background-color: #0f111d;
     width: 100%;
     padding: 16px 12px;
     display: flex;
@@ -1478,6 +1479,7 @@ export default {
     justify-content: space-between;
     box-sizing: border-box;
     border-radius: 10px;
+    border: 1px solid white;
 
     >img {
         height: 90px;
@@ -1501,7 +1503,7 @@ export default {
             box-sizing: border-box;
 
             input {
-                background-color: #641BE9;
+                background-color: #0f111d;
                 color: #ffd727;
                 font-size: 12px;
                 border-radius: 4px;
@@ -1511,9 +1513,9 @@ export default {
             .button {
                 cursor: pointer;
                 margin-left: 6px;
-                background: #FBD81E;
+                background: #00bafe;
                 box-shadow: 0 0 0.2rem rgba(251,216,30,.3), inset 0 -0.04rem 0.06rem 0.02rem #f6a80b;
-                color: rgb(140,36,43) !important;
+                color: white !important;
                 font-weight: 400;
                 box-shadow: unset;
                 height: 28px;
@@ -1532,7 +1534,7 @@ export default {
 
 .award-info {
     margin-top: 10px;
-    background-color: #641BE9;
+    background-color: #0f111d;
     width: 100%;
     padding: 16px 20px 10px;
     display: flex;
@@ -1540,6 +1542,7 @@ export default {
     justify-content: space-between;
     box-sizing: border-box;
     border-radius: 10px;
+    border: 1px solid white;
 
     .award-item {
         width: 40%;
@@ -1605,13 +1608,14 @@ export default {
     box-sizing: border-box;
 
     .invite-item {
-        background-color: #641BE9;
+        background-color: #0f111d;
         border-radius: 6px;
         width: 48%;
         position: relative;
         padding: 0 20px;
         font-size: 0;
         box-sizing: border-box;
+        border: 1px solid white;
 
         .invite-num {
             text-align: center;

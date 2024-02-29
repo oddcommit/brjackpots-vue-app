@@ -418,7 +418,7 @@ export default {
         background-size: cover;
         width: 100%;
         height: 100vh;
-        max-width: 400px;
+        max-width: 450px;
         max-height: 100%;
         overflow-y: scroll;
         padding: 26px 30px 30px;
