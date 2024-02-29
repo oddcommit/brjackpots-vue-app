@@ -1,9 +1,9 @@
 {
-    "website": "brjackpots",
-    "weburl": "brjackpots.com",
+    "website": "CurTamBet",
+    "weburl": "CurTamBet.com",
     "currency":"BRL",
     "currencySymbol":"R$",
-    "sourceUrl": "../../static/game/",
+    "sourceUrl": "http://127.0.0.1:8080/static/game/",
     "noLoggedPic": "../../static/banner/2.png",
     "loginPic": "../../static/banner/1.png"
 }
