@@ -997,14 +997,11 @@ input:-ms-input-placeholder {
 .login-button {
     cursor: pointer;
     background: #00bafe;
-    box-shadow: 0 0 40px rgba(19,1,49,.6), 0 1px 6px rgba(24,0,73,.7), inset 0 0 5px rgba(255,108,0,.85);
     color: white !important;
     height: 44px;
     width: 100%;
     font-size: 18px !important;
     letter-spacing: 0 !important;
-    border-radius: 16px !important;
-    border: 2px solid white;
     text-align: center;
 }
 
@@ -1037,7 +1034,7 @@ input:-ms-input-placeholder {
 
     .active {
         color: white;
-        background: linear-gradient(180deg, rgba(19,18,36,1) 0%, rgb(68, 181, 230) 100%);;
+        background: linear-gradient(180deg, #121410 0%, #0dbdff 100%);;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
     }
@@ -1439,6 +1436,8 @@ input:-ms-input-placeholder {
         display: flex;
         box-sizing: border-box;
         justify-content: center;
+        border: 1px solid white;
+        border-radius: 2px;
 
         .link {
             width: 100%;
@@ -1537,14 +1536,11 @@ input:-ms-input-placeholder {
 .register-button {
     cursor: pointer;
     background: #0f111d;
-    box-shadow: 0 0 22px rgba(15,76,212,.57), 0 1px 4px rgba(24,0,73,.7), inset 0 0 9px rgba(233,58,255,.6);
     color: white !important;
     height: 44px;
     width: 100%;
     font-size: 18px !important;
     letter-spacing: 0 !important;
-    border-radius: 16px !important;
-    border: 2px solid white;
     text-align: center;
 }
 
@@ -1566,9 +1562,9 @@ input:-ms-input-placeholder {
         width: 200px;
         font-size: 15px;
         border-radius: 4px !important;
-        border: 0 !important;
+        border: 1px solid white !important;
         height: 36px;
-        background: #5e1119;
+        background: #0f111d;
         color: #fff;
         outline: none !important;
     }

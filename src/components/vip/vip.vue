@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="pross-item">
-                            <div style="background-color: rgb(21,255,170);" :style="{ width: scorePross + '%' }"
+                            <div style="background-color: #0035ff;" :style="{ width: scorePross + '%' }"
                                 class="pross-bg">
                             </div>
                         </div>

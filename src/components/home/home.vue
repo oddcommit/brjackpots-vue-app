@@ -1,26 +1,6 @@
 <template>
     <div style="position: relative;">
         <div class="main-page" v-if="!allGameCover">
-            <!-- <div class="header-cover"></div>
-            <div class="line-box" style="bottom: 220px;">
-                <div class="save-box" @click="saveDesktop">
-                    <img :src="require('../../assets/index/save.png')" />
-                </div>
-            </div>
-            <div class="line-box" style="bottom: 160px;">
-                <a class="contack-link" :href="newLineCustomer" target="_blank">
-                    <img class="line-icon" :src="require('../../assets/index/service.png')" />
-                </a>
-            </div>
-            <div class="line-box">
-                <a class="contack-link" :href="lineCustomer" target="_blank">
-                    <img class="line-icon" v-if="customerType == 1" :src="require('../../assets/line.png')" />
-                    <img class="line-icon" v-if="customerType == 2" :src="require('../../assets/fb.png')" />
-                    <img class="line-icon" v-if="customerType == 3" :src="require('../../assets/whats.png')" />
-                    <img class="line-icon" v-if="customerType == 4" :src="require('../../assets/twitter.png')" />
-                    <img class="line-icon" v-if="customerType == 5" :src="require('../../assets/telegram.png')" />
-                </a>
-            </div> -->
             <div class="banner">
                 <div class="recommendPage">
                     <swiper class="swiperMobile" :options="swiperOptionMoible" ref="mySwiper">
@@ -1260,7 +1240,7 @@ export default {
         justify-content: center;
         margin: 4px auto 0;
         width: 100px;
-        height: 30px;
+        height: 25px;
         border-radius: 38px;
         text-align: center;
         color: white;
@@ -1325,7 +1305,7 @@ export default {
     border: 10px solid;
     border-image-slice: 1;
     border-width: 1px;
-    border-image: linear-gradient(to top, #0a1739, #00b7f8);
+    border-image-source: linear-gradient(to top, #0a1739, #00b7f8);
     height: 60px;
     
     .game-menu-item {

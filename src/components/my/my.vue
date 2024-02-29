@@ -1048,12 +1048,12 @@ export default {
                     height: 12px;
                     line-height: 12px;
                     font-size: 10px;
-                    color: #333;
+                    color: white;
                     text-align: center;
                 }
 
                 .progress {
-                    background-color: rgb(21, 255, 170);
+                    background-color: #0035ff;
                     width: 100%;
                     height: 8px;
                     border-radius: 6px;
