@@ -26,8 +26,8 @@
                                             <div class="game-menu-item" @click="changeGameItem(nav.type)">
                                                 <div>
                                                     <img class="menu-icon" v-if="nav.name == 'HOT GAME' || nav.name == 'PP'"
-                                                    style="height: 22px" :src="'../../../static/game/' + nav.name + '.png'" />
-                                                    <img class="menu-icon" v-else :src="'../../../static/game/' + nav.name + '.png'"/>
+                                                    style="height: 22px" :src="sourceUrl + nav.name + '.png'" />
+                                                    <img class="menu-icon" v-else :src="sourceUrl + nav.name + '.png'"/>
                                                 </div>
                                                 <div v-if="nav.type == selectedGameItem" class="nav-bottom-bar"></div>
                                             </div>
@@ -36,7 +36,7 @@
                                     <template v-for="(game, index) in gameList">
                                         <div v-if="game.type == selectedGameItem" class="list-game-bacarat">
                                             <div class="game-menu-all">
-                                                <img class="menu-icon" :src="require('../../../static/game/'+game.title + '.png')" />
+                                                <img class="menu-icon" :src="sourceUrl+game.title + '.png'" />
                                             </div>
                                             <div class="game-item game-mobile" v-for="(item, i) in game.list" v-if="i < showGameNumber"
                                                 @click="toGame(item.gameid, item.type, item.roomid, item.open, item)">
@@ -44,7 +44,7 @@
                                                     <img :src="require('../../assets/play.png')" />
                                                 </div>
                                                 <img class="game-img" v-if="game.type == 3" :src="'https://lucas999.prerelease-env.biz/game_pic/square/200/'+item.gameid+'.png'" />
-                                                <img class="game-img" v-else :src="require('../../../static/game/'+item.roomid+'_'+GLOBAL.lanCode+'.png')" />
+                                                <img class="game-img" v-else :src="sourceUrl+item.roomid+'_'+GLOBAL.lanCode+'.png'" />
                                             </div>
                                             <div class="game-item game-pc" v-for="(item, i) in game.list" v-if="i < 12"
                                                 @click="toGame(item.gameid, item.type, item.roomid, item.open, item)">
@@ -52,7 +52,7 @@
                                                     <img :src="require('../../assets/play.png')" />
                                                 </div>
                                                 <img class="game-img" v-if="game.type == 3" :src="'https://lucas999.prerelease-env.biz/game_pic/square/200/'+item.gameid+'.png'" />
-                                                <img class="game-img" v-else :src="require('../../../static/game/'+item.roomid+'_'+GLOBAL.lanCode+'.png')" />
+                                                <img class="game-img" v-else :src="sourceUrl+item.roomid+'_'+GLOBAL.lanCode+'.png'" />
                                             </div>
                                             <div class="showMore">
                                                 <div @click="showMore()">
@@ -93,7 +93,7 @@
                                     <template v-for="(item,i) in allGame.list">
                                         <div class="game-item no-animate" @click="toGame(item.gameid, item.type, item.roomid, item.open, item)">
                                             <img class="game-img" v-if="allGame.type == 3" :src="'https://lucas999.prerelease-env.biz/game_pic/square/200/'+item.gameid+'.png'" />
-                                                <img class="game-img" v-else :src="require('../../../static/game/'+item.roomid+'_'+GLOBAL.lanCode+'.png')" />
+                                                <img class="game-img" v-else :src="sourceUrl+item.roomid+'_'+GLOBAL.lanCode+'.png'" />
                                         </div>
                                     </template>
                                 </div>
