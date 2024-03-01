@@ -26,8 +26,8 @@
                                             <div class="game-menu-item" @click="changeGameItem(nav.type)">
                                                 <div>
                                                     <img class="menu-icon" v-if="nav.name == 'HOT GAME' || nav.name == 'PP'"
-                                                    style="height: 22px" :src="sourceUrl + nav.name + '.png'" />
-                                                    <img class="menu-icon" v-else :src="sourceUrl + nav.name + '.png'"/>
+                                                    style="height: 22px" :src="'../../../static/game/' + nav.name + '.png'" />
+                                                    <img class="menu-icon" v-else :src="'../../../static/game/' + nav.name + '.png'"/>
                                                 </div>
                                                 <div v-if="nav.type == selectedGameItem" class="nav-bottom-bar"></div>
                                             </div>
