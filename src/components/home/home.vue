@@ -26,8 +26,8 @@
                                             <div class="game-menu-item" @click="changeGameItem(nav.type)">
                                                 <div>
                                                     <img class="menu-icon" v-if="nav.name == 'HOT GAME' || nav.name == 'PP'"
-                                                    style="height: 22px" :src="sourceUrl + nav.name + '.png'" />
-                                                    <img class="menu-icon" v-else :src="sourceUrl + nav.name + '.png'"/>
+                                                    style="height: 22px" :src="'../../../static/game/' + nav.name + '.png'" />
+                                                    <img class="menu-icon" v-else :src="'../../../static/game/' + nav.name + '.png'"/>
                                                 </div>
                                                 <div v-if="nav.type == selectedGameItem" class="nav-bottom-bar"></div>
                                             </div>
@@ -36,7 +36,7 @@
                                     <template v-for="(game, index) in gameList">
                                         <div v-if="game.type == selectedGameItem" class="list-game-bacarat">
                                             <div class="game-menu-all">
-                                                <img class="menu-icon" :src="sourceUrl+game.title + '.png'" />
+                                                <img class="menu-icon" :src="'../../../static/game/'+game.title + '.png'" />
                                             </div>
                                             <div class="game-item game-mobile" v-for="(item, i) in game.list" v-if="i < showGameNumber"
                                                 @click="toGame(item.gameid, item.type, item.roomid, item.open, item)">
